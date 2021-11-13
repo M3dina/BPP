@@ -1,0 +1,214 @@
+
+
+<!doctype html>
+
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>leccion1 module &#8212; documentación de Practica 03 - 0.1</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/bizstyle.css" />
+    
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/translations.js"></script>
+    <script src="_static/bizstyle.js"></script>
+    <link rel="index" title="Índice" href="genindex.html" />
+    <link rel="search" title="Búsqueda" href="search.html" />
+    <link rel="prev" title="Practica3" href="modules.html" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <!--[if lt IE 9]>
+    <script src="_static/css3-mediaqueries.js"></script>
+    <![endif]-->
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navegación</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="Índice General"
+             accesskey="I">índice</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Índice de Módulos Python"
+             >módulos</a> |</li>
+        <li class="right" >
+          <a href="modules.html" title="Practica3"
+             accesskey="P">anterior</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">documentación de Practica 03 - 0.1</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="modules.html" accesskey="U">Practica3</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">leccion1 module</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="module-leccion1">
+<span id="leccion1-module"></span><h1>leccion1 module<a class="headerlink" href="#module-leccion1" title="Enlazar permanentemente con este título">¶</a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="leccion1.GastoIngreso">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">leccion1.</span></span><span class="sig-name descname"><span class="pre">GastoIngreso</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">mes</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">valor</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#leccion1.GastoIngreso" title="Enlazar permanentemente con esta definición">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="simple">
+<dt>Clase GastoIngreso</dt><dd><p>mes = indica el mes del gasto o ingreso
+valor = indica el valor de ese gasto o ingreso</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="leccion1.comprobarFichero">
+<span class="sig-prename descclassname"><span class="pre">leccion1.</span></span><span class="sig-name descname"><span class="pre">comprobarFichero</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">df</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#leccion1.comprobarFichero" title="Enlazar permanentemente con esta definición">¶</a></dt>
+<dd><p>Metodo comprobarFichero. Comprueba que el DataFrame facilitado contiene 12 columnas.</p>
+<dl class="simple">
+<dt>Input:</dt><dd><p>df -&gt; DataFrame de pandas.</p>
+</dd>
+<dt>Output:</dt><dd><p>Nada</p>
+</dd>
+<dt>Excepciones:</dt><dd><p>IndexError -&gt; excepción para controlar si no se encuentra un valor en el índice definido.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="leccion1.grafico">
+<span class="sig-prename descclassname"><span class="pre">leccion1.</span></span><span class="sig-name descname"><span class="pre">grafico</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">valores</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#leccion1.grafico" title="Enlazar permanentemente con esta definición">¶</a></dt>
+<dd><p>Metodo grafico. Crea el grafico de una lista de valores facilitados.</p>
+<dl class="simple">
+<dt>Input:</dt><dd><p>lista -&gt; diccionario de valores.</p>
+</dd>
+<dt>Output:</dt><dd><p>plt.show() -&gt; muestra el grafico creado.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="leccion1.leerDatos">
+<span class="sig-prename descclassname"><span class="pre">leccion1.</span></span><span class="sig-name descname"><span class="pre">leerDatos</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">df</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#leccion1.leerDatos" title="Enlazar permanentemente con esta definición">¶</a></dt>
+<dd><dl class="simple">
+<dt>Metodo leerDatos. Lee los datos de un Dataframe por columnas y por filas. Una vez se lean los datos, se creará un diccionario</dt><dd><p>relacionando las columnas con los valores totales de sus filas según sean ingresos (positivo) y gastos (negativo).</p>
+</dd>
+<dt>Input:</dt><dd><p>df -&gt; DataFrame de pandas.</p>
+</dd>
+<dt>Output:</dt><dd><p>gastos -&gt; Diccionario (mes, valor) de los gastos
+ingresos -&gt; Diccionario (mes, valor) de los ingresos
+incorrect_values -&gt; Cuenta de los valores incorrectos detectados en el DataFrame</p>
+</dd>
+<dt>Excepciones:</dt><dd><p>IndexError -&gt; excepción para controlar si no se encuentra un valor en el índice definido.
+TypeError -&gt; excepción para controlar si el tipo de datos no es correcto.
+ValueError -&gt; excepción para controlar si el valor no es correcto.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="leccion1.leerFichero">
+<span class="sig-prename descclassname"><span class="pre">leccion1.</span></span><span class="sig-name descname"><span class="pre">leerFichero</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">path</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#leccion1.leerFichero" title="Enlazar permanentemente con esta definición">¶</a></dt>
+<dd><p>Metodo leerFichero. Abre y lee el fichero facilitado en el path para convertirlo en un DataFrame “pandas”.</p>
+<dl class="simple">
+<dt>Input:</dt><dd><p>path -&gt; ruta donde se encuentra el fichero (si es nula, se pondrá por defecto “finanzas2020.csv”).</p>
+</dd>
+<dt>Output:</dt><dd><p>df -&gt; DataFrame del fichero facilitado por el path o del fichero por defecto “finanzas2020.csv”</p>
+</dd>
+<dt>Excepciones:</dt><dd><p>FileNotFoundError -&gt; excepción para controlar si no se encuentra el fichero</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="leccion1.media">
+<span class="sig-prename descclassname"><span class="pre">leccion1.</span></span><span class="sig-name descname"><span class="pre">media</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">lista</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#leccion1.media" title="Enlazar permanentemente con esta definición">¶</a></dt>
+<dd><p>Metodo media. Calcula la media de una lista de valores facilitados.</p>
+<dl class="simple">
+<dt>Input:</dt><dd><p>lista -&gt; diccionario de valores.</p>
+</dd>
+<dt>Output:</dt><dd><p>media -&gt; valor de la media de la lista de valores</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="leccion1.obtenerMax">
+<span class="sig-prename descclassname"><span class="pre">leccion1.</span></span><span class="sig-name descname"><span class="pre">obtenerMax</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">gastos</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#leccion1.obtenerMax" title="Enlazar permanentemente con esta definición">¶</a></dt>
+<dd><p>Metodo obtenerMax. Calcula el máximo valor de ingreso/gasto de un diccionario facilitado, pasado por parámetro.</p>
+<dl class="simple">
+<dt>Input:</dt><dd><p>ingresos_gastos -&gt; Diccionario (mes, valor).</p>
+</dd>
+<dt>Output:</dt><dd><p>GastoIngreso -&gt; Objeto GastoIngreso con los respectivos datos (mes, valor)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="leccion1.total">
+<span class="sig-prename descclassname"><span class="pre">leccion1.</span></span><span class="sig-name descname"><span class="pre">total</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">lista</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#leccion1.total" title="Enlazar permanentemente con esta definición">¶</a></dt>
+<dd><p>Metodo total. Calcula el total de una lista de valores facilitados.</p>
+<dl class="simple">
+<dt>Input:</dt><dd><p>lista -&gt; diccionario de valores.</p>
+</dd>
+<dt>Output:</dt><dd><p>sumaTotal -&gt; valor de la suma de la lista de valores</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h4>Tema anterior</h4>
+  <p class="topless"><a href="modules.html"
+                        title="capítulo anterior">Practica3</a></p>
+  <div role="note" aria-label="source link">
+    <h3>Esta página</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/leccion1.rst.txt"
+            rel="nofollow">Mostrar el código</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Búsqueda rápida</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Ir a" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navegación</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="Índice General"
+             >índice</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Índice de Módulos Python"
+             >módulos</a> |</li>
+        <li class="right" >
+          <a href="modules.html" title="Practica3"
+             >anterior</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">documentación de Practica 03 - 0.1</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="modules.html" >Practica3</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">leccion1 module</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Derechos de autor 2021, Daniel Medina Garcia.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 4.3.0.
+    </div>
+  </body>
+</html>
