@@ -1,6 +1,7 @@
 import pytest
 import leccion1
 
+# Clase de pruebas para la práctica número 2
 
 def test_media():
     diccionario = {'1': 1, '2': 2, '3': 3, '4': 4, '5': 5}
